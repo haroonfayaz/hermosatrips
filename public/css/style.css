@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    box-sizing:border;
+    box-sizing:border-box;
     font-family:'Poppins',sans-serif;
     text-decoration: none;
     list-style: none;
@@ -34,27 +34,35 @@
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(1, 0, 4, 0.3),rgba(4, 1, 12, 0.2));
-
-
 
 }
 
 nav{
     width: 100%;
+    height: 50px;
     position: fixed;
-    background-color: rgb(31, 34, 34);
+    background-color: #F1A661;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .logo{
-    width: 60px;
-    margin: 2vh;
-    margin-left: 8%;
+nav .logo {
+  width: 40px;
+  height: 40px; /* Set height equal to width to create a perfect circle */
+  margin: 2vh;
+  margin-left: 8%;
+  border-radius: 50%; /* Add border-radius to make it round */
+  overflow: hidden; /* Hide any content that might overflow from the circle */
 }
+
+nav .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make sure the logo image fills the circle */
+}
+
 
 nav ul li{
     list-style: none;
@@ -79,7 +87,7 @@ nav ul li{
 
 .navbar a:hover,.navbar a.active{
     background: white;
-    color: black;
+    color: #7A9D54;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 5px;
     
@@ -90,6 +98,7 @@ nav ul li a{
     color: rgb(255, 255, 255);
     font-size: 17px;
 }
+
 
 .title{
     text-decoration: none;
@@ -312,64 +321,6 @@ nav ul li a{
     cursor: pointer;
 }
 
-/* Newsletter */
-
-.newsletter{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.newstext h2{
-    margin-top: 100px;
-    font-size: 38px;
-}
-
-.newstext p{
-    font-size: 20px;
-    color: #4c4c4c;
-}
-
-.newsletter form{
-    margin-top: 100px;
-    width: 100%;
-    position: relative;
-}
-
-.newsletter form input:first-child{
-    display: inline-block;
-    width: 300px;
-    font-size: 17px;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    padding: 20px 150px 20px 30px;
-    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-}
-
-.newsletter form input:last-child{
-    display: inline-block;
-    position: absolute;
-    outline: none;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    color: white;
-    background-color: rgb(21, 74, 74);
-    padding: 14px 30px;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: 450;
-    top: 6px;
-    right: 6px;
-    transition: ease 0.30s;
-}
-
-.newsletter form input:last-child:hover{
-    border: 2px solid rgb(21, 74, 74);
-    background-color: white;
-    color: rgb(21, 74, 74);
-}
 
 
 /* Footer */
@@ -460,7 +411,7 @@ nav ul li a{
 /* About Us */
 
 .aboutbody{
-    background-color: #191919;
+    background-color: #87805E;
 }
 
 .about{
@@ -617,7 +568,7 @@ nav ul li a{
 /* Registration Form */
 
 .register-body{
-    background-color: #101010;
+    background-color: #87805E;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -646,7 +597,7 @@ nav ul li a{
 .register-form form input{
     color: white;
     padding: 17px;
-    background-color: #191919;
+    background-color: #D8CCA3;
     font-size: 16px;
     outline: none;
     border: none;
@@ -679,7 +630,34 @@ nav ul li a{
     background-color: transparent;
     transform: scale(1.1);
 }
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .registration {
+      padding: 110px 5%;
+      max-width: 100%; /* Adjust padding on smaller screens */
+  }
 
+  .register-form h1 {
+      font-size: 30px; /* Decrease font size for h1 on smaller screens */
+  }
+
+  .register-form {
+      font-size: 18px; /* Decrease font size for the form on smaller screens */
+  }
+
+  .register-form form input {
+      padding: 15px; /* Adjust padding for input fields on smaller screens */
+      font-size: 14px; /* Decrease font size for input fields on smaller screens */
+  }
+
+  .register-form h4 {
+      font-size: 20px; /* Decrease font size for h4 on smaller screens */
+  }
+
+  .register-form form .submitbtn {
+      font-size: 18px; /* Decrease font size for submit button on smaller screens */
+  }
+}
 
 .location-body{
     background-color: #191919;
@@ -725,3 +703,274 @@ nav ul li a{
     font-size: 20px;
     color: rgb(197, 167, 44);
 }
+/* Add this media query to adjust the navigation for smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    padding-top: 10px; /* You can adjust this value to your preference */
+    margin-top: -100px; 
+    flex-direction: column;
+    background-color: rgba(88, 151, 151, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+ 
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;  /* Change to block display to stack the menu items vertically */
+  }
+
+  /* Update the navbar link styles for mobile */
+  .navbar a {
+    color: white;
+    font-size: 10px;
+    padding: 8px 8px;
+    border-radius: 2px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: ease 0.40s;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+  }
+  
+
+  .navbar a:hover,
+  .navbar a.active {
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+  }
+
+  /* Adjust the spacing between menu items for mobile */
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  
+}
+  
+  /* Add this media query to make the banner content responsive */
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: auto;
+      max-width: 100%;
+      align-items: flex-start;
+      padding-top: 100px;
+    }
+  
+    .content {
+      height: auto;
+    }
+  
+    .title {
+      margin-top: 15vh;
+      text-align: center;
+      font-size: 6vh;
+    }
+  
+    .title h1 {
+      font-size: 6vh;
+    }
+    .title p {
+      font-size: 4vh;
+    }
+  
+  
+    .button {
+      font-size: 10px;
+    }
+  }
+  
+  /* Add this media query to adjust the Services section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .rowitems {
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+      gap: 15px;
+    }
+  }
+  
+  /* Add this media query to adjust the Packages section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .package-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .package-content .image {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Add this media query to adjust the Locations section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .location-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-content img {
+      height: 300px;
+      width: 300px;
+    }
+  
+    .col-content h5 {
+      font-size: 18px;
+      bottom: 90px;
+    }
+  
+    .col-content p {
+      font-size: 16px;
+      bottom: 70px;
+    }
+  }
+  
+  /* Add this media query to adjust the Newsletter section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .newsletter form input:first-child {
+      width: 100%;
+    }
+  
+    .newsletter form input:last-child {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  /* Add this media query to adjust the Footer section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footlinks {
+      margin-bottom: 30px;
+    }
+  
+    .footlinks h4::before {
+      width: 50px;
+    }
+  
+    .footlinks ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footlinks ul li a {
+      font-size: 15px;
+    }
+  
+    .social a {
+      height: 30px;
+      width: 30px;
+      font-size: 25px;
+    }
+  }
+  
+  /* Add this media query to adjust the About Us section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .about {
+      padding: 50px 10%;
+    }
+  
+    .about img {
+      width: 100%;
+    }
+  
+    .abt-text {
+      width: 100%;
+    }
+  
+    .abt-text h1 {
+      font-size: 40px;
+    }
+  
+    .abt-text p {
+      font-size: 18px;
+    }
+  
+    .main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .connectbtn {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Add this media query to adjust the Contact Us section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 50px 10%;
+    }
+  
+    .contact-form h1 {
+      font-size: 40px;
+    }
+  
+    .contact-form p {
+      font-size: 18px;
+    }
+  
+    .contact-form form input,
+    .contact-form form textarea {
+      font-size: 16px;
+    }
+  
+    .contact-form form .submit-btn {
+      font-size: 22px;
+      width: 180px;
+    }
+  }
+  
+  /* Add this media query to adjust the Registration Form section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .registration {
+      padding: 50px 10%;
+    }
+  
+    .register-form h1 {
+      font-size: 40px;
+    }
+  
+    .register-form form input {
+      font-size: 16px;
+    }
+  
+    .register-form h4 {
+      font-size: 20px;
+    }
+  
+    .register-form form .submitbtn {
+      font-size: 18px;
+      width: 180px;
+    }
+  }
+  
+  /* Add this media query to adjust the Location Detail section for smaller screens */
+  @media screen and (max-width: 768px) {
+    .location-section {
+      padding: 50px 10%;
+    }
+  
+    .location-heading h1 {
+      font-size: 40px;
+    }
+  
+    .location-detail h1 {
+      font-size: 30px;
+    }
+  
+    .location-img img {
+      height: 300px;
+      width: 300px;
+    }
+  
+    .stars i {
+      font-size: 18px;
+    }
+  }
+  
