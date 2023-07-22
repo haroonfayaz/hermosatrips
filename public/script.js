@@ -66,3 +66,51 @@ function validateEmail(email) {
 var re = /\S+@\S+\.\S+/;
 return re.test(email);
 };
+
+
+function partnerform() {
+    var name = document.getElementById('company-name').value;
+    var email = document.getElementById('company-email').value;
+    var contact = document.getElementById('pcontact').value;
+    var city = document.getElementById('address').value;
+
+    if (name.length < 2) {
+        alert("Name must be at least 2 characters long.");
+        return false;
+    }
+
+    if (!validateEmail(email)) {
+        alert("Invalid email address.");
+        return false;
+    }
+
+    if (contact.length < 10) {
+        alert("Phone number must be at least 10 digits long.");
+        return false;
+    }
+
+
+    var partdata = {
+            name: name,
+            email: email,
+            contact: contact,
+            city: city,                                                                                                 
+           
+        };
+        try {
+            firebase.database().ref('partners').push(partdata);
+            alert('Thank you! We will contact you shortly.');
+            document.getElementById('myForm').reset();
+        } catch (error) {
+            console.log("Error sending data to Firebase:", error);
+            alert('An error occurred while submitting the form. Please try again.');
+        }
+    
+
+    return false;
+}
+
+function validateEmail(email) {
+var re = /\S+@\S+\.\S+/;
+return re.test(email);
+};

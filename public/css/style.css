@@ -623,14 +623,14 @@ nav ul li a{
 }
 
 .register-form{
-    color: white;
+    color:#270082;
     font-size: 20px;
     padding: 0;
 
 }
 
 .register-form form input{
-    color: white;
+    color:#270082;
     padding: 17px;
     background-color: #E2F6CA;
     font-size: 16px;
