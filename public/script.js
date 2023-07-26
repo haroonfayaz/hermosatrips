@@ -114,3 +114,11 @@ function validateEmail(email) {
 var re = /\S+@\S+\.\S+/;
 return re.test(email);
 };
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-YG16QJ8GME');
