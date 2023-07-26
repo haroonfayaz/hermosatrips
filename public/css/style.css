@@ -316,9 +316,9 @@ nav ul li a{
 
 .col-content img{
     margin-bottom: 40px;
-    height: 500px;
+    height: 300px;
     border-radius: 27px;
-    width: 100%;
+    width: 300px;
     
 }
 
@@ -682,7 +682,7 @@ nav ul li a{
 
 
 .location-body{
-    background-color: #191919;
+    background-color: #ACB1D6;
     color: white;
 }
 
@@ -715,10 +715,12 @@ nav ul li a{
 
 .location-img img{
     height: 400px;
-    width: 400px;
+    width: 700px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
+
 
 .stars i{
     font-size: 20px;
