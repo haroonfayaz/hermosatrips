@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="icon" href="./files/logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body style="background-image: url('./files/background2.jpeg'); background-size: cover; background-position: center;">
+    <div class="content" id="home"> 
+        <div class="fixed">
+        <nav>
+
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">Home</a>
+                    <a href="./locations.html">Locations</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./register.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+ 
+
+    <section class="registration">
+        <div class="register-form">
+            <h1>Work with <span>Us</span></h1>
+            <form action="" onsubmit="return partnerform()" id="myForm">
+                <input type="text" name="companyname" placeholder="Company Name" id="company-name" required autocomplete="off" >
+                <input type="email" name="Companyemail" placeholder="Email-Id" id="company-email" required autocomplete="off">
+                <input type="tel" name="contact" placeholder="Phone No." id="pcontact" required autocomplete="off">
+                <input type="text" name="place" placeholder="Address" id="address" required autocomplete="off">
+                <br> <br>
+                <input type="submit" value="Submit" class="submitbtn">
+            </form>
+            
+        </div>
+    </section>
+
+<!-- Footer -->
+
+<section class="footer" id ="about">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footlinks">
+                <h4>Address</h4>
+                <ul>
+                    <li>Budoo Bagh,Khanyar</li>
+                    <li>Srinagar,Jammu And Kashmir</li>
+                    <li>190003</li>
+                </ul>
+            </div>
+            <div class="footlinks">
+                <h4>Phone </h4>
+                <ul>
+                    <li>M : 6005651530</li>
+                    <li>T : 0194-4030147</li>
+                    <li>Email:hermosatrips@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100094492004593&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://instagram.com/hermosatrips?igshid=MzRlODBiNWFlZA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/6005651530" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © Hermosa Trips All Rights Reserved.<br>Website developed by 🐫</p>
+    </div>
+</section>
+<script src="script.js"></script>
+
+    </body>
+</html>

@@ -17,17 +17,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/public/files/background2.jpeg");
+    background-size: cover;
+    color: #270082;
+
+
 }
 
-.banner video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+.banner img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
+
 
 .content{
     position: relative;
@@ -41,7 +47,7 @@ nav{
     width: 100%;
     height: 50px;
     position: fixed;
-    background-color: #F1A661;
+    background-color: transparent;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
     display: flex;
     align-items: center;
@@ -64,10 +70,12 @@ nav .logo img {
 }
 
 
+
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 40px;
+    place-items: center;
 }
 
 .navbar{
@@ -76,7 +84,7 @@ nav ul li{
 }
 
 .navbar a{
-    color: white;
+    color:#1A1C20;
     font-size: 18px;
     padding: 10px 22px;
     border-radius: 4px;
@@ -84,6 +92,18 @@ nav ul li{
     text-decoration: none;
     transition: ease 0.40s;
 }
+.fixed :hover{
+  background: #270082;
+  color: #7A9D54;
+ 
+  
+}
+:target .fixed {
+  background-color: #fc0050; /* Change to your desired fixed color */
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 .navbar a:hover,.navbar a.active{
     background: white;
@@ -104,7 +124,7 @@ nav ul li a{
     text-decoration: none;
     /* display: inline-block; */
     font-size: 4vh;
-    color: rgb(255, 255, 255);
+    color: #270082;
     padding: 14px 17px;
     margin-top: 32vh;
     text-align: center;
@@ -115,10 +135,12 @@ nav ul li a{
     font-size: 10vh;
     text-shadow: 2px black;
     transition: ease 0.3s;
+    color: #270082;
+
 }
 
 .title h1:hover{
-    color:transparent;
+    color: #8CC0DE;
     -webkit-text-stroke: 1px white;
     
 }
@@ -138,7 +160,7 @@ nav ul li a{
 
 .button:hover{
     transform: scale(1.1);
-    color: white;
+    color: #270082;
     background-color: rgb(32, 124, 174);
     /* border: 2px solid rgb(42, 37, 68); */
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
@@ -200,7 +222,11 @@ nav ul li a{
     border: 1px solid transparent;
     border-radius: 0px;
 }
-
+@media (max-width: 768px) {
+  .text h2 {
+      margin-top: 220px; /* Adjust the top margin for smaller screens */
+  }
+}
 /* Packages */
 
 .package-title{
@@ -290,9 +316,9 @@ nav ul li a{
 
 .col-content img{
     margin-bottom: 40px;
-    height: 500px;
+    height: 300px;
     border-radius: 27px;
-    width: 100%;
+    width: 300px;
     
 }
 
@@ -327,7 +353,7 @@ nav ul li a{
 
 .footer{
     margin-top: 80px;
-    background-color: rgb(21, 74, 74);
+    background-color: #E1ECC8;
 }
 
 .foot{
@@ -345,7 +371,7 @@ nav ul li a{
     margin-top: 30px;
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    color: #270082;
     margin-bottom: 30px;
     position: relative;
 }
@@ -363,18 +389,20 @@ nav ul li a{
 
 .footlinks ul li{
     margin-bottom: 15px;
+    color: #270082;
+
 }
 
 .footlinks ul li a{
     font-size: 17px;
-    color: #dddddd;
+    color: #270082;
     display: block;
     transition: ease 0.30s;
 }
 
 .footlinks ul li a:hover{
     transform: translate(6px);
-    color: white;
+    color: #99A98F;
 }
 
 .social a{
@@ -392,7 +420,7 @@ nav ul li a{
 }
 
 .social a:hover{
-    transform: scale(1.2);
+    transform: scale(2.2);
 }
 
 .end{
@@ -403,7 +431,7 @@ nav ul li a{
 
 .end p{
     font-size: 15px;
-    color: white;
+    color: #270082;
     letter-spacing: 1px;
     font-weight: 300;
 }
@@ -411,7 +439,10 @@ nav ul li a{
 /* About Us */
 
 .aboutbody{
-    background-color: #87805E;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 .about{
@@ -430,7 +461,7 @@ nav ul li a{
 
 .abt-text h1{
     font-size: 70px;
-    color: white;
+    color: #270082;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -441,11 +472,11 @@ nav ul li a{
 }
 
 .abt-text p{
-    color: white;
-    font-size: 24px;
-    margin-bottom: 45px;
-    line-height: 30px;
-    letter-spacing: 1px;
+  color: #270082;
+  font-size: 24px;
+  margin-bottom: 45px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .main{
@@ -459,9 +490,9 @@ nav ul li a{
 
 .connectbtn{
     display: inline-block;
-    background-color: #fc0050;
+    background-color: #7A9D54;
     font-size: 18px;
-    color: white;
+    color: #270082;
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
@@ -472,7 +503,7 @@ nav ul li a{
 
 .connectbtn:hover{
     background-color: transparent;
-    border: 2px solid #fc0050;
+    border: 2px solid #D9ACF5;
     transform: scale(1.1);
 }
 
@@ -571,6 +602,8 @@ nav ul li a{
     background-color: #87805E;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("/public/files/background2.jpeg");
+
 
 }
 
@@ -582,91 +615,79 @@ nav ul li a{
 
 .register-form h1{
     font-size: 50px;
-    color: white;
+    color: #270082;
     margin-bottom: 20px;
 }
 .register-form h1 span{
-    color: #fc0050;
+    color: #7A0BC0;
 }
 
 .register-form{
-    color: white;
+    color:#270082;
     font-size: 20px;
+    padding: 0;
+
 }
 
 .register-form form input{
-    color: white;
+    color:#270082;
     padding: 17px;
-    background-color: #D8CCA3;
+    background-color: #E2F6CA;
     font-size: 16px;
     outline: none;
     border: none;
     border-radius: 10px;
     margin-bottom: 20px;
+    height: 14px;
+    width: 240px;
+    margin-left: 15px;
+    padding-right: 5px;
+    
     
 }
 .register-form h4{
     font-size: 22px;
     font-weight: 500;
-    margin-top: 20px;
-    color: #fc0050;
+    /* margin-top: 20px; */
+    /* color: #fc0050; */
 }
 
 
-.register-form form .submitbtn{
-    display: inline-block;
-    background-color: #fc0050;
-    font-size: 20px;
-    font-weight: 600px;
-    border: 2px solid transparent;
-    border-radius: 60px;
-    width: 220px;
-    cursor: pointer;
-    transition: ease 0.30s;
+.register-form form .submitbtn {
+  display: inline-block;
+  background-color: #fc0050;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 60px;
+  width: 120px;
+  height: 40px; /* Add a specific height to the button */
+  line-height: 40px; /* Center the text vertically within the button */
+  text-align: center;
+  cursor: pointer;
+  transition: ease 0.30s;
+  box-sizing: border-box; /* Include padding and border in the specified width */
+  padding: 0; /* Reset padding */
 }
+
+
+
 
 .register-form form .submitbtn:hover{
     border: 2px solid #fc0050;
     background-color: transparent;
     transform: scale(1.1);
 }
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .registration {
-      padding: 110px 5%;
-      max-width: 100%; /* Adjust padding on smaller screens */
-  }
 
-  .register-form h1 {
-      font-size: 30px; /* Decrease font size for h1 on smaller screens */
-  }
-
-  .register-form {
-      font-size: 18px; /* Decrease font size for the form on smaller screens */
-  }
-
-  .register-form form input {
-      padding: 15px; /* Adjust padding for input fields on smaller screens */
-      font-size: 14px; /* Decrease font size for input fields on smaller screens */
-  }
-
-  .register-form h4 {
-      font-size: 20px; /* Decrease font size for h4 on smaller screens */
-  }
-
-  .register-form form .submitbtn {
-      font-size: 18px; /* Decrease font size for submit button on smaller screens */
-  }
-}
 
 .location-body{
-    background-color: #191919;
+    background-color: #ACB1D6;
     color: white;
 }
 
 .location-section{
     padding: 110px;
-    height: 100%;
     min-height: 100vh;
 }
 
@@ -694,10 +715,12 @@ nav ul li a{
 
 .location-img img{
     height: 400px;
-    width: 400px;
+    width: 700px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
+
 
 .stars i{
     font-size: 20px;
@@ -707,22 +730,27 @@ nav ul li a{
 @media screen and (max-width: 768px) {
   nav {
     padding-top: 10px; /* You can adjust this value to your preference */
-    margin-top: -100px; 
     flex-direction: column;
-    background-color: rgba(88, 151, 151, 0.95);
+    background-color: transparent;
     backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
   }
 
  
   nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 20px;  /* Change to block display to stack the menu items vertically */
+    margin-left: 10px; 
+    margin-bottom: 10px;  
+    display: flex;  
   }
 
-  /* Update the navbar link styles for mobile */
   .navbar a {
-    color: white;
+    color: #1A1C20;
     font-size: 10px;
     padding: 8px 8px;
     border-radius: 2px;
@@ -731,6 +759,10 @@ nav ul li a{
     transition: ease 0.40s;
     background-color: rgba(255, 255, 255, 0.1);
     
+  }
+  nav .logo{
+   
+    display: none;
   }
   
 
@@ -759,6 +791,7 @@ nav ul li a{
       max-width: 100%;
       align-items: flex-start;
       padding-top: 100px;
+
     }
   
     .content {
@@ -769,19 +802,38 @@ nav ul li a{
       margin-top: 15vh;
       text-align: center;
       font-size: 6vh;
+      color: #270082;
+
     }
   
     .title h1 {
       font-size: 6vh;
+      color: #270082;
+
     }
     .title p {
       font-size: 4vh;
+      color: #270082;
+
     }
   
   
     .button {
       font-size: 10px;
+      color: #270082;
+
     }
+    .button{
+      display: inline-block;
+      margin-top:2vh;
+      font-size: 10px;
+      padding: 10px 30px;
+      color: #270082;
+      background-color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: ease 0.30s;
+  }
   }
   
   /* Add this media query to adjust the Services section for smaller screens */
@@ -827,17 +879,7 @@ nav ul li a{
     }
   }
   
-  /* Add this media query to adjust the Newsletter section for smaller screens */
-  @media screen and (max-width: 768px) {
-    .newsletter form input:first-child {
-      width: 100%;
-    }
-  
-    .newsletter form input:last-child {
-      top: 10px;
-      right: 10px;
-    }
-  }
+
   
   /* Add this media query to adjust the Footer section for smaller screens */
   @media screen and (max-width: 768px) {
@@ -873,6 +915,10 @@ nav ul li a{
   @media screen and (max-width: 768px) {
     .about {
       padding: 50px 10%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
     }
   
     .about img {
@@ -930,6 +976,9 @@ nav ul li a{
   @media screen and (max-width: 768px) {
     .registration {
       padding: 50px 10%;
+      align-items: center;
+
+
     }
   
     .register-form h1 {
@@ -938,6 +987,7 @@ nav ul li a{
   
     .register-form form input {
       font-size: 16px;
+
     }
   
     .register-form h4 {
@@ -949,6 +999,7 @@ nav ul li a{
       width: 180px;
     }
   }
+ 
   
   /* Add this media query to adjust the Location Detail section for smaller screens */
   @media screen and (max-width: 768px) {
