@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="icon" href="./files/logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+            <div class="fixed">
+            <nav>
+    
+                <ul class="navbar">
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <a href="./locations.html">Locations</a>
+                        <a href="./package.html">Packages</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./register.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="scrolling-text mt-3">
+            <p> For any queries please call : 6005651530</p>
+        </div>
+    </header>
+    <section class="packbody container-fluid">
+        <div class="pack-detail">
+            <h3>Weekend(3N/4D)</h3>
+            <div class='about-side'>
+                <div class="container mt-4 col-m-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Day 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> 
+                                <strong>Srinagar Arrival-Srinagar Local Sightseeing</strong> Our driver/ representative will pick you up from the Srinagar airport and take you to the Hotel. After refreshment leave for Srinagar local sightseeing, visiting the famous Mughal gardens in Srinagar which are Nishat Bagh (The garden of Pleasure), & Shalimar Bagh (Abode of love). These gardens are situated on the banks of Dal Lake. Nishat Bagh is the larger of the two gardens & has an impressive plantation of Chinar trees on its highest terrace. Both the gardens are built on a symmetrical plan of central waterways with fountains dividing a series of gardened terraces. Visit Botanical Garden & Shankar Acharya temple. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Day 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Gulmarg – Srinagar</strong> After breakfast, go to Gulmarg, which is a part of the Western Himalayas and is situated on the Pir Panjal Range. The Meadow of Flowers is the nickname for Gulmarg. On the way, you can admire the lovely Tangmarg town before continuing on a scenic 14-kilometer trip to Gulmarg. Beginning a little trip, board the Gondola cable car system (the 08-minute ropeway). After an hour, return to Gulmarg and indulge in some horseback riding. Dinner and overnight stay at the Gulmarg hotel.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Day 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar-Pahalgam-Srinagar</strong> We travel to Pahalgam after breakfast.At Khanabal, we leave the NH44 and travel through Anantnag, the second-largest city. From this point on, the highway becomes beautiful as we follow the Lidder River as it flows in the opposite direction. Later, you can travel to several breathtaking locations including Chandanwari, Beetab Valley, and Aru Valley (AT YOUR OWN COST). Later back to Srinagar and check into Houseboat, take 01 hour shikara ride in the famous Dal Lake visiting floating gardens and Meena bazaar. Have dinner and overnight stay at Houseboat.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar Airport drop</strong> Today after breakfast leave for Srinagar airport for onwards destination journey with happy memories.
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+
+            <div class="pack_img mt-4 ">
+                <img src="./files/p1.jpg" alt="purpose"/>
+            </div>
+        </div> 
+        </div>
+        <div class="pack-detail">
+            <h3>Paradise(6N/7D)</h3>
+            <div class='about-side'>
+                <div class="container mt-4 col-m-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Day 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> 
+                                <strong>Srinagar Arrival-Srinagar Local Sightseeing</strong> Our driver/ representative will pick you up from the Srinagar airport and take you to the Hotel. After refreshment leave for Srinagar local sightseeing, visiting the famous Mughal gardens in Srinagar which are Nishat Bagh (The garden of Pleasure), & Shalimar Bagh (Abode of love). These gardens are situated on the banks of Dal Lake. Nishat Bagh is the larger of the two gardens & has an impressive plantation of Chinar trees on its highest terrace. Both the gardens are built on a symmetrical plan of central waterways with fountains dividing a series of gardened terraces. Visit Botanical Garden & Shankar Acharya temple. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Day 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Gulmarg- Stay at Srinagar</strong> After breakfast in the morning, proceed towards Gulmarg, located on the Pir Panjal Range which is the part of the Western Himalayas. Gulmarg is known as the Meadow of Flowers. Enroute you get to see the beautiful Tangmarg town and drive ahead on a scenic drive of 14 kilometers to Gulmarg. Later, begin a short tour, boarding the Gondola cable car system (the 08 minutes ropeway). Descend back to Gulmarg after an hour and later indulge in some horse-riding. At evening return back to Srinagar hotel for dinner and overnight stay.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Day 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Sonmarg- Stay at Srinagar</strong> After breakfast, drive to Sonmarg. Cross the towns of Kangan, Mammar, Gagangir. Once you reach Sonmarg, take a 3-hour walk or horseback trip to the Thajwas glacier (on your own). Thajwas Glacier is the most prominent attraction of Sonmarg- the Golden Meadow in the picturesque valley of Kashmir. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar – Dhoodhpatri – Srinagar</strong>Today after breakfast Proceed to Doodh-e-pathri is yet another bowl shaped valley about 42 kms from Srinagar. It is a recent discovery in the valley covered with the green carpeted meadows. A flowing river resounds with soft wind passing through the pine trees of the enclosures of the valley. It is also called as a “VALLEY OF MILK” because it produces rich milk in a large quantity. After spending whole day in Dhoodhpatri return back to Srinagar hotel for dinner and overnight stay.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 5
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar – Pahalgam- Stay at Pahalgam </strong>After breakfast, we drive to Pahalgam. We switch from the national highway 1A at Khanabal and drive through the second largest city of Anantnag. From here the road turns scenic as we drive parallel on the Lidder River flowing from the opposite direction. Later you can visit many breath-taking places like Beetab Valley, Aru valley & Chandanwari (ON OWN COST). Check in to the Hotel. Dinner and Night Stay at the Hotel in Pahalgam.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 6
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong> Pahalgam Local sightseeing – Srinagar </strong> Morning after Breakfast, return back to Srinagar and get directly transferred to houseboat in Dal Lake. Have 01 hour shikara ride in the famous Dal Lake visiting local Meena Bazaar and world famous floating gardens. Have dinner and overnight stay at houseboat. 
+
+
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 7
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Departure</strong> Today after Breakfast, get transferred to Srinagar Airport for an onward destination journey. 
+
+
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+
+            <div class="pack_img mt-4 ">
+                <img src="./files/p2.jpg" alt="purpose"/>
+            </div>
+        </div> 
+        </div>
+        <div class="pack-detail">
+            <h3>Honeymoon(5N/6D)</h3>
+            <div class='about-side'>
+                <div class="container mt-4 col-m-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Day 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> 
+                                <strong>Srinagar Arrival-Srinagar Local Sightseeing</strong> Our driver/ representative will pick you up from the Srinagar airport and take you to the Hotel. After refreshment leave for Srinagar local sightseeing, visiting the famous Mughal gardens in Srinagar which are Nishat Bagh (The garden of Pleasure), & Shalimar Bagh (Abode of love). These gardens are situated on the banks of Dal Lake. Nishat Bagh is the larger of the two gardens & has an impressive plantation of Chinar trees on its highest terrace. Both the gardens are built on a symmetrical plan of central waterways with fountains dividing a series of gardened terraces. Visit Botanical Garden & Shankar Acharya temple. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Day 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong> Srinagar – Sonamarg- Stay at Srinagar</strong> After breakfast, drive to Sonamarg. Cross the towns of Kangan, Mammar, Gagangir. Once you reach Sonamarg, take a 3-hour walk or horseback trip to the Thajwas glacier (If open at that time). Thajwas Glacier is the most prominent attraction of Sonmarg- the Golden Meadow in the picturesque valley of Kashmir. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Day 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Gulmarg- Stay at Gulmarg</strong> After breakfast in the morning, proceed towards Gulmarg, located on the Pir Panjal Range which is the part of the Western Himalayas. Gulmarg is known as the Meadow of Flowers. Enroute you get to see the beautiful Tangmarg town and drive ahead on a scenic drive of 14 kilometers to Gulmarg. Later, begin a short tour, boarding the Gondola cable car system (the 08 minutes ropeway). Descend back to Gulmarg after an hour and later indulge in some horse-riding. Dinner and night stay at the Hotel in Gulmarg.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Gulmarg– Pahalgam- Stay at Pahalgam</strong> After breakfast, we drive to Pahalgam. We switch from the national highway NH44 at Khanabal and drive through the second largest city of Anantnag. From here the road turns scenic as we drive parallel on the Lidder River flowing from the opposite direction. Later you can visit many breath-taking places like Beetab Valley, Aru valley & Chandanwari (ON OWN COST). Check in to the Hotel. Dinner and Night Stay at the Hotel in Pahalgam.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 5
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong> Pahalgam – Srinagar </strong> Morning after Breakfast, return back to Srinagar and get directly transferred to houseboat in Dal Lake. Have 01 hour shikara ride in the famous Dal Lake visiting local Meena Bazaar and world famous floating gardens. Have dinner and overnight stay at houseboat. 
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 6
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Departure</strong> Today after Breakfast, get transferred to Srinagar Airport for an onward destination journey. 
+
+
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+
+            <div class="pack_img mt-4 ">
+                <img src="./files/p5.jpg" alt="purpose"/>
+            </div>
+        </div> 
+        </div>
+        <div class="pack-detail">
+            <h3>Off Beat(5N/6D)</h3>
+            <div class='about-side'>
+                <div class="container mt-4 col-m-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Day 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> 
+                                <strong>S Srinagar Arrival – Gurez (stay)</strong> Today after arrival at Srinagar Airport meet our representative and begin your trip with majestic Gurez valley. Gurez valley is located in the Himalayas and you reach there through road from Bandipora via Razdan Top. The drive is nothing less than a spectacular experience and you will notice the beauty of nature at its best. Visit Razdan top located at an altitude of 11672 feet. It is famous for its medicinal plant. Razdan Pass is an adrenaline-pumping road in India. From Razdan top you can view the snow-capped Harmukh Peak which is the highest mountain peak of Kashmir. On reaching Gurez, check in to your hotel for an overnight stay.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Day 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong> Gurez Local Sightseeing</strong> Today after breakfast leave for local sightseeing of Gurez, You will be visiting a local town known as Dawar. It is famous as an archaeological site. Here you will get to see beautiful log wood houses. The local people of Dawar town are called “Dards”. They are very friendly, you can talk to them and explore more about their local lives. Explore the beautiful natural beauty of the region. This place is nothing less than a dreamland. Just sit and relax around lush green meadows and enjoy the beauty of Mother Nature. You will also visit the majestic Sheikhpura and Chakwali villages. Chakwali village is the last Indian village on the line of control.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Day 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Gurez – Srinagar and Dal Lake Visit</strong> Today after breakfast leave from Gurez and get transferred to Srinagar, once you reach Srinagar check into the Houseboat, take 01 hour Shikara ride in the famous Dal Lake exploring Meena Bazaar and floating gardens. Have dinner and overnight stay at Houseboat.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar – Sinthantop – Srinagar</strong> Today after breakfast by early morning Proceed for a full day excursion to Daksum and SinthanTop, Sinthan top is the highest pass connecting Kashmir with Jammu via Kishtwar. Daksum swathed in coniferous green forests is trekkers paradise. The curvy uphill drive from Daksum to Sinthan Top is pretty thrilling and adventurous. Sinthan top is popular for the 360 degrees view and year round snow..Dinner and overnight stay at Srinagar.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 5
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong> Srinagar – Dhoodhpatri – Srinagar</strong> Today after breakfast Proceed to Doodhpathri is yet another bowl shaped valley about 42 kms from Srinagar. It is a recent discovery in the valley covered with the green carpeted meadows. A flowing river resounds with soft wind passing through the pine trees of the enclosures of the valley. It is also called as a “VALLEY OF MILK” because it produces rich milk in a large quantity. After spending whole day in Dhoodhpatri return back to Srinagar hotel for dinner and overnight stay. 
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 6
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Departure</strong> Today after Breakfast, get transferred to Srinagar Airport for an onward destination journey. 
+
+
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+
+            <div class="pack_img mt-4 ">
+                <img src="./files/p3.jpg" alt="purpose"/>
+            </div>
+        </div> 
+        </div>
+        <div class="pack-detail">
+            <h3>All in one(9N/10D)</h3>
+            <div class='about-side'>
+                <div class="container mt-4 col-m-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Day 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> 
+                                <strong>Srinagar Arrival-Srinagar Local Sightseeing</strong> Our driver/ representative will pick you up from the Srinagar airport and take you to the Hotel. After refreshment leave for Srinagar local sightseeing, visiting the famous Mughal gardens in Srinagar which are Nishat Bagh (The garden of Pleasure), & Shalimar Bagh (Abode of love). These gardens are situated on the banks of Dal Lake. Nishat Bagh is the larger of the two gardens & has an impressive plantation of Chinar trees on its highest terrace. Both the gardens are built on a symmetrical plan of central waterways with fountains dividing a series of gardened terraces. Visit Botanical Garden & Shankar Acharya temple. Dinner and night stay at the Hotel in Srinagar.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Day 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Dhoodhpatri – Srinagar</strong> Today after breakfast Proceed to Doodh-e-pathri is yet another bowl shaped valley about 42 kms from Srinagar. It is a recent discovery in the valley covered with the green carpeted meadows. A flowing river resounds with soft wind passing through the pine trees of the enclosures of the valley. It is also called as a “VALLEY OF MILK” because it produces rich milk in a large quantity. After spending whole day in Dhoodhpatri return back to Srinagar hotel for dinner and overnight stay.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Day 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Srinagar – Gulmarg- Stay at Srinagar</strong> After breakfast in the morning, proceed towards Gulmarg, located on the Pir Panjal Range which is the part of the Western Himalayas. Gulmarg is known as the Meadow of Flowers. Enroute you get to see the beautiful Tangmarg town and drive ahead on a scenic drive of 14 kilometers to Gulmarg. Later, begin a short tour, boarding the Gondola cable car system (the 08 minutes ropeway). Descend back to Gulmarg after an hour and later indulge in some horse-riding. Dinner and night stay at the Hotel in Gulmarg.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar – Gurez (stay)</strong> After breakfast Begin your day of majestic Gurez valley. Gurez valley is located in the Himalayas and you reach there through road from Bandipora via Razdan Top. The drive is nothing less than a spectacular experience and you will notice the beauty of nature at its best. Visit Razdon top located at an altitude of 11672 feet. It is famous for its medicinal plant. Razdan Pass is an adrenaline-pumping road in India. From Razdan top you can view the snow-capped Harmukh Peak which is the highest mountain peak of Kashmir. On reaching Gurez, check in to your hotel for an overnight stay.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 5
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong> Gurez Local Sightseeing</strong> Today after breakfast leave for local sightseeing of Gurez, You will be visiting a local town known as Dawar. It is famous as an archaeological site. Here you will get to see beautiful log wood houses. The local people of Dawar town are called “Dards”. They are very friendly, you can talk to them and explore more about their local lives. Explore the beautiful natural beauty of the region. This place is nothing less than a dreamland. Just sit and relax around lush green meadows and enjoy the beauty of Mother Nature. You will also visit the majestic Sheikhpura and Chakwali villages. Chakwali village is the last Indian village on the line of control.
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 6
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Gurez – Srinagar</strong> Today after breakfast leave from Gurez and get transferred to Srinagar, once you reach Srinagar check into the hotel for dinner and overnight stay.
+
+
+
+
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 7
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Srinagar – Sonmarg- Stay at Srinagar Or Old City Tour</strong> After breakfast, drive to Sonmarg. Cross the towns of Kangan, Mammar, Gagangir. Once you reach Sonmarg, take a 3-hour walk or horseback trip to the Thajwas glacier (If open at that time). Thajwas Glacier is the most prominent attraction of Sonmarg- the Golden Meadow in the picturesque valley of Kashmir. Dinner and night stay at the Hotel in Srinagar.
+
+
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 8
+                              </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong> Srinagar – Pahalgam- Stay at Pahalgam</strong> After breakfast, we drive to Pahalgam. We switch from the national highway 1A at Khanabal and drive through the second largest city of Anantnag. From here the road turns scenic as we drive parallel on the Lidder River flowing from the opposite direction. Later you can visit many breathtaking places like Betaab Valley, Aru valley & Chandanwari (ON OWN COST). Visit Baisaran via ponies. Check in to the Hotel. Dinner and Night Stay at the Hotel in Pahalgam.
+
+
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 9
+                              </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Pahalgam Local sightseeing – Srinagar </strong> Morning after Breakfast, return back to Srinagar and get directly transferred to houseboat in Dal Lake. Have 01 hour shikara ride in the famous Dal Lake visiting local Meena Bazaar and world famous floating gardens. Have dinner and overnight stay at houseboat. 
+
+
+                            </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Day 10
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <strong>Departure</strong> Today after Breakfast, get transferred to Srinagar Airport for an onward destination journey. 
+
+
+                            </div>
+                            </div>
+                          </div>
+
+                      </div>
+                </div>
+
+            <div class="pack_img mt-4 ">
+                <img src="./files/p4.jpg" alt="purpose"/>
+            </div>
+        </div> 
+        </div>
+    
+       
+</section>
+<!-- Footer -->
+<section class="footer" id ="pack">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footlinks">
+                <h4>Address</h4>
+                <ul>
+                    <li>Budoo Bagh,Khanyar</li>
+                    <li>Srinagar,Jammu And Kashmir</li>
+                    <li>190003</li>
+                </ul>
+            </div>
+            <div class="footlinks">
+                <h4>Phone </h4>
+                <ul>
+                    <li>M : 6005651530</li>
+                    <li>T : 0194-4030147</li>
+                    <li>Email:hermosatrips@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100094492004593&mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://instagram.com/hermosatrips?igshid=MzRlODBiNWFlZA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/6005651530" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © Hermosa Trips All Rights Reserved.<br>Website developed by 🐫</p>
+    </div>
+</section>
+   
+</body>
+</html>
