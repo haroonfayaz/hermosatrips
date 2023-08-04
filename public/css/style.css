@@ -310,7 +310,7 @@ nav ul li a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -318,7 +318,9 @@ nav ul li a{
     font-size: 25px;
     letter-spacing: 1px;
     font-weight: 600;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-left: 22px;
 }
 
 .pac-details li{
@@ -349,8 +351,8 @@ nav ul li a{
   cursor: pointer;
   transition: ease 0.30s;
   box-sizing: border-box; /* Include padding and border in the specified width */
-  /* padding: 0; Reset padding */
-  margin-left: 30px; 
+  padding-top: 8px; 
+  margin-left: 20px; 
   place-items: center;
  }
   
