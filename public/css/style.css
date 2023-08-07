@@ -1264,8 +1264,9 @@ border-radius: 20px;
 
     }
   
-    .about img {
+    .about_img {  
       width: 100%;
+      display: none;
     }
   
     .abt-text {
